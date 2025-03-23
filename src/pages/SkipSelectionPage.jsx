@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { fetchSkipsByLocation } from '../api/skips';
-import { motion } from 'framer-motion';
 import SkipCard from '../components/SkipCard';
 import '../styles/global.css';
 import FilterBar from '../components/FilterBar';
@@ -59,22 +58,13 @@ const SkipSelectionPage = () => {
 
   return (
     <div className="container">
-      <motion.h1
-  initial={{ opacity: 0, y: -20 }}
-  animate={{ opacity: 1, y: 0 }}
-  transition={{ duration: 0.5 }}
->
+      <h1>
   Choose a Skip
-</motion.h1>
+</h1>
 
-<motion.p
-  className="page-subtitle"
-  initial={{ opacity: 0, y: 10 }}
-  animate={{ opacity: 1, y: 0 }}
-  transition={{ delay: 0.3, duration: 0.5 }}
->
+<p>
   Select the skip size that best suits your needs
-</motion.p>
+</p>
 
       <FilterBar
         filters={filters}

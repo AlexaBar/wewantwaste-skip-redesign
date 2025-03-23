@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { motion } from 'framer-motion';
 import './CartPage.css';
 
 const CartPage = () => {
@@ -31,20 +30,11 @@ const CartPage = () => {
 
   return (
     <div className="container">
-      <motion.h1
-        initial={{ opacity: 0, y: -10 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
-      >
+      <h1>
         Booking Confirmation
-      </motion.h1>
+      </h1>
 
-      <motion.div
-        className="booking-box"
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.2 }}
-      >
+      <div>
           <div className="booking-box2">
         <h2>{skip.name || `Skip (${skip.size} yd³)`}</h2>
         <p>{skip.description}</p>
@@ -84,17 +74,12 @@ const CartPage = () => {
             <button type="submit">Confirm Booking</button>
           </form>
         ) : (
-          <motion.div
-            className="success-message"
-            initial={{ scale: 0.8, opacity: 0 }}
-            animate={{ scale: 1, opacity: 1 }}
-            transition={{ type: 'spring', stiffness: 100 }}
-          >
+         <div>
             🎉 Thank you! Your skip is booked for <strong>{date}</strong>.
             <br /> Confirmation sent to <strong>{email}</strong>.
-          </motion.div>
+          </div>
         )}
-      </motion.div>
+      </div>
     </div>
   );
 };
