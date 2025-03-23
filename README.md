@@ -3,21 +3,25 @@ This is a modern, fully responsive redesign of the skip selection experience for
 PROJECT STRUCTURE:
 
 src/
-├── api/
-│ └── skips.js - API call to fetch skip options by postcode/location
-├── components/
-│ ├── Header.jsx - Top navigation with theme toggle and nav links
-│ ├── Footer.jsx - Bottom section with copyright & contact
-│ ├── FilterBar.jsx - Skip filters (road-safe, heavy waste) + sort dropdown
-│ └── SkipCard.jsx - Flip-style animated card for each skip option
-├── pages/
-│ ├── SkipSelectionPage.jsx - Main page that lists skips with filters & animations
-│ └── CartPage.jsx - Booking confirmation page with selected skip summary
-├── assets/
-│ └── (custom PNGs like leaves, skip images)
-├── App.jsx - Root app component; sets up routes, layout & falling leaves
-└── index.css - Global styles including grid, animation, dark mode, and leaf effects
-└── main.jsx - React + Vite app entry point (loads App into the DOM)
+── api/
+── skips.js - API call to fetch skip options by postcode/location
+
+── components/
+── Header.jsx - Top navigation with theme toggle and nav links
+── Footer.jsx - Bottom section with copyright & contact
+── FilterBar.jsx - Skip filters (road-safe, heavy waste) + sort dropdown
+── SkipCard.jsx - Flip-style animated card for each skip option
+
+── pages/
+── SkipSelectionPage.jsx - Main page that lists skips with filters & animations
+── CartPage.jsx - Booking confirmation page with selected skip summary
+
+── assets/
+─ (custom PNGs like leaves, skip images)
+
+── App.jsx - Root app component; sets up routes, layout & falling leaves
+── index.css - Global styles including grid, animation, dark mode, and leaf effects
+── main.jsx - React + Vite app entry point (loads App into the DOM)
 
 Frontend Framework:
 
