@@ -20,7 +20,9 @@ src/
 ─ (custom PNGs like leaves, skip images)
 
 ── App.jsx - Root app component; sets up routes, layout & falling leaves
+
 ── index.css - Global styles including grid, animation, dark mode, and leaf effects
+
 ── main.jsx - React + Vite app entry point (loads App into the DOM)
 
 Frontend Framework:
