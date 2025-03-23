@@ -1,0 +1,109 @@
+.booking-box {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+    max-width: 600px;
+    margin: 2rem auto;
+  }
+
+  .price-summary {
+    margin-top: 1.5rem;
+    background: #f9fafb;
+    padding: 1rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .price-summary .highlight {
+    color: #10b981;
+    font-size: 1.2rem;
+  }
+  
+  .booking-form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5rem;
+    gap: 1rem;
+  }
+  
+  .booking-form label {
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+    color: #333;
+  }
+  
+  .booking-form input {
+    margin-top: 0.4rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+  }
+  
+  .booking-form button {
+    padding: 0.7rem;
+    font-size: 1rem;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s ease;
+  }
+  
+  .booking-form button:hover {
+    background-color: #1e40af;
+  }
+  
+  .success-message {
+    text-align: center;
+    background: #e0f7e9;
+    border: 1px solid #a4e1ba;
+    padding: 1.5rem;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    color: #064e3b;
+    margin-top: 2rem;
+  }
+
+ body.dark .booking-box {
+  background: rgba(30, 41, 59, 0.4); /* transparent dark glass */
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 15px rgba(59, 130, 246, 0.3); /* subtle blue glow */
+ }
+ body.dark .booking-box p {
+  color: white;
+ }
+ body.dark .price-summary {
+  color: white;
+  background: rgba(30, 41, 59, 0.4); /* transparent dark glass */
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 15px rgba(59, 130, 246, 0.3); /* subtle blue glow */
+ }
+ body.dark form {
+  background: rgba(30, 41, 59, 0.4); /* transparent dark glass */
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 15px rgba(59, 130, 246, 0.3); /* subtle blue glow */
+ }
+
+ body.dark .booking-form label {
+  background: rgba(30, 41, 59, 0.4); /* transparent dark glass */
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 15px rgba(59, 130, 246, 0.3); /* subtle blue glow */
+ }
+ body.dark .booking-form input {
+  background: rgba(59, 130, 246, 0.3) ;
+  border-style: none;
+  color: white;
+ }
+
+  
+  
