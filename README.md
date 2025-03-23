@@ -1,5 +1,17 @@
 This is a modern, fully responsive redesign of the skip selection experience for WeWantWaste. Built with React, styled with pure CSS, animated with Framer Motion, and infused with engaging UI/UX features for both desktop and mobile users.
 
+My Approach
+
+I focused on modern UI/UX principles while keeping the existing functionality:
+
+- Skip Card Redesign: Each skip option is displayed in an animated flip card with a clean front (image + title) and back (description + pricing ).
+- Responsiveness: The app is fully responsive using `grid` and media queries for mobile, tablet, and desktop.
+- Theme Awareness: Dark mode styling with transparent glassmorphism card backs and adaptive leaf colors.
+- Ambient Motion: Leaves fall in the background using animated `<img>` elements that react to theme, giving the UI a seasonal and organic touch.
+- State Management: Minimal use of `localStorage` to persist selected skip data.
+- Animations: Framer Motion adds smooth transitions on page elements, buttons, and confirmation steps.
+- Maintainability: Code is component-based and readable, using only lightweight tools (no Tailwind or heavy UI kits).
+
 PROJECT STRUCTURE:
 
 src/
