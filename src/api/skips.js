@@ -1,13 +1,12 @@
-import axios from 'axios';
-
 export const fetchSkipsByLocation = async () => {
-  try {
-    const response = await axios.get(
-      'https://app.wewantwaste.co.uk/api/skips/by-location?postcode=NR32&area=Lowestoft'
-    );
-    return response.data;
-  } catch (error) {
-    console.error('Error fetching skip data:', error);
-    return [];
-  }
+  const isSandbox = window.location.hostname.includes("codesandbox");
+
+  const url = isSandbox
+    ? "/mockSkips.json"
+    : "https://app.wewantwaste.co.uk/api/skips/by-location?postcode=NR32&area=Lowestoft";
+
+  const response = await fetch(url);
+  const data = await response.json();
+  return data;
 };
+
