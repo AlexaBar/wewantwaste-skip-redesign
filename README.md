@@ -1,6 +1,11 @@
-This is a modern, fully responsive redesign of the skip selection experience for WeWantWaste. Built with React, styled with pure CSS, animated with Framer Motion, and infused with engaging UI/UX features for both desktop and mobile users.
+This is a modern, fully responsive redesign of the skip selection experience for WeWantWaste.
+Built with React, styled with pure CSS and infused with engaging UI/UX features for both desktop and mobile users.
 
-My Approach
+## Sandbox
+
+The sandbox url is https://94hkjs-4173.csb.app/
+
+## My Approach
 
 I focused on modern UI/UX principles while keeping the existing functionality:
 
@@ -11,32 +16,9 @@ I focused on modern UI/UX principles while keeping the existing functionality:
 - Animations: Framer Motion adds smooth transitions on page elements, buttons, and confirmation steps.
 - Maintainability: Code is component-based and readable, using only lightweight tools (no Tailwind or heavy UI kits).
 
-PROJECT STRUCTURE:
+## PROJECT STRUCTURE:
 
-src/
-── api/
-── skips.js - API call to fetch skip options by postcode/location
-
-── components/
-── Header.jsx - Top navigation with theme toggle and nav links
-── Footer.jsx - Bottom section with copyright & contact
-── FilterBar.jsx - Skip filters (road-safe, heavy waste) + sort dropdown
-── SkipCard.jsx - Flip-style animated card for each skip option
-
-── pages/
-── SkipSelectionPage.jsx - Main page that lists skips with filters & animations
-── CartPage.jsx - Booking confirmation page with selected skip summary
-
-── assets/
-─ (skip image)
-
-── App.jsx - Root app component; sets up routes
-
-── index.css - Global styles including grid, animation, dark mode
-
-── main.jsx - React + Vite app entry point (loads App into the DOM)
-
-Frontend Framework:
+### Frontend Framework:
 
 - Built with React + Vite;
 - Custom pure CSS styling;
@@ -64,8 +46,8 @@ Dark Mode Support:
 - Glow & color contrast enhancements;
 - Auto theme detection based on <body class="dark">.
 
-FUTURE IDEAS:
+## FUTURE IDEAS:
 
--Admin panel to manage skips;
--Skip comparison tool;
--Checkout with delivery address and contact form;
+- Admin panel to manage skips;
+- Skip comparison tool;
+- Checkout with delivery address and contact form;
