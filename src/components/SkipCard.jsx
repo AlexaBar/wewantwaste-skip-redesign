@@ -1,4 +1,5 @@
 import React from 'react';
+
 import './SkipCard.css';
 
 const SkipCard = ({ skip, onSelect }) => {
@@ -18,7 +19,7 @@ const SkipCard = ({ skip, onSelect }) => {
           <p>{skip.description || 'Perfect for garden or household waste.'}</p>
           <p>Size: {skip.size} yd³</p>
           <p>Hire: {skip.hire_period_days} days</p>
-          <p>Total: <strong>£{totalPrice}</strong></p>
+          <p>Total: <strong>£ {totalPrice}</strong></p>
           <button onClick={() => onSelect(skip)}>Select</button>
         </div>
       </div>

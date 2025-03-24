@@ -78,21 +78,25 @@
 .flip-card-back button:hover {
   background-color: #1e40af;
 }
+
 body.dark .flip-card-front {
   background: rgba(30, 41, 59, 0.4); /* transparent dark glass */
   color: white;
   border: 1px solid rgba(255, 255, 255, 0.1);
   box-shadow: 0 0 15px rgba(59, 130, 246, 0.3); /* subtle blue glow */
 }
+
 body.dark .flip-card-front h2 {
   color: white;
 }
+
 body.dark .flip-card-back {
   background: rgba(30, 41, 59, 0.4); /* transparent dark glass */
   color: white;
   border: 1px solid rgba(255, 255, 255, 0.1);
   box-shadow: 0 0 15px rgba(59, 130, 246, 0.3); /* subtle blue glow */
 }
+
 body.dark .flip-card-back p{
   color: white;
 }

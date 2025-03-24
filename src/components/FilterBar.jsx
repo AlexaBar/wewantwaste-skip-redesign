@@ -1,4 +1,5 @@
 import React from 'react';
+
 import './FilterBar.css';
 
 const FilterBar = ({ filters, setFilters, sortBy, setSortBy }) => {

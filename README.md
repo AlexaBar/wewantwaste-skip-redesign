@@ -6,8 +6,7 @@ I focused on modern UI/UX principles while keeping the existing functionality:
 
 - Skip Card Redesign: Each skip option is displayed in an animated flip card with a clean front (image + title) and back (description + pricing ).
 - Responsiveness: The app is fully responsive using `grid` and media queries for mobile, tablet, and desktop.
-- Theme Awareness: Dark mode styling with transparent glassmorphism card backs and adaptive leaf colors.
-- Ambient Motion: Leaves fall in the background using animated `<img>` elements that react to theme, giving the UI a seasonal and organic touch.
+- Theme Awareness: Dark mode styling with transparent glassmorphism card backs.
 - State Management: Minimal use of `localStorage` to persist selected skip data.
 - Animations: Framer Motion adds smooth transitions on page elements, buttons, and confirmation steps.
 - Maintainability: Code is component-based and readable, using only lightweight tools (no Tailwind or heavy UI kits).
@@ -29,11 +28,11 @@ src/
 ── CartPage.jsx - Booking confirmation page with selected skip summary
 
 ── assets/
-─ (custom PNGs like leaves, skip images)
+─ (skip image)
 
-── App.jsx - Root app component; sets up routes, layout & falling leaves
+── App.jsx - Root app component; sets up routes
 
-── index.css - Global styles including grid, animation, dark mode, and leaf effects
+── index.css - Global styles including grid, animation, dark mode
 
 ── main.jsx - React + Vite app entry point (loads App into the DOM)
 
@@ -51,12 +50,6 @@ Flip Cards with Animation:
 - Cards flip 180° on hover;
 - Front: Image + name;
 - Back: Description, price, and button
-
-Smooth Framer Motion animations:
-
-- Falling Leaves Effect;
-- Seasonal leaf animation using <img> elements;
-- Leaf style/color changes with light/dark mode;
 
 Cart & Confirmation Page:
 

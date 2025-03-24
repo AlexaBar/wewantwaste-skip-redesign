@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+
 import { fetchSkipsByLocation } from '../api/skips';
 import SkipCard from '../components/SkipCard';
 import '../styles/global.css';
@@ -30,21 +31,37 @@ const SkipSelectionPage = () => {
     };
     load();
   }, []);
+  
   const filteredSkips = skips
     .filter((s) => {
-      if (filters.onRoad && !s.allowed_on_road) return false;
-      if (filters.heavyWaste && !s.allows_heavy_waste) return false;
+      if (
+        filters.onRoad 
+        && !s.allowed_on_road
+      ) {
+        return false;
+      }
+
+      if (
+        filters.heavyWaste 
+        && !s.allows_heavy_waste
+      ) {
+        return false;
+      }
+      
       return true;
     })
     .sort((a, b) => {
       if (sortBy === 'price') {
         const priceA = a.price_before_vat + a.vat;
         const priceB = b.price_before_vat + b.vat;
+        
         return priceA - priceB;
       }
+
       if (sortBy === 'size') {
         return a.size - b.size;
       }
+
       return 0;
     });
 
@@ -59,12 +76,12 @@ const SkipSelectionPage = () => {
   return (
     <div className="container">
       <h1>
-  Choose a Skip
-</h1>
+        Choose a Skip
+      </h1>
 
-<p>
-  Select the skip size that best suits your needs
-</p>
+      <p>
+        Select the skip size that best suits your needs
+      </p>
 
       <FilterBar
         filters={filters}
@@ -72,15 +89,15 @@ const SkipSelectionPage = () => {
         sortBy={sortBy}
         setSortBy={setSortBy}
       />
-      {loading ? (
-        <p className="loading">Loading skips...</p>
-      ) : (
-        <div className="grid">
+      
+      {loading 
+      ? (<p className="loading">Loading skips...</p>) 
+      : (<div className="grid">
           {filteredSkips.map((skip) => (
             <SkipCard key={skip.id} skip={skip} onSelect={handleSelect} />
           ))}
-        </div>
-      )}
+        </div>)
+      }
     </div>
   );
 };

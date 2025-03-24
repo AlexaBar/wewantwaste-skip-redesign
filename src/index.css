@@ -25,6 +25,7 @@ h1 {
   margin-bottom: 2rem;
   color: #2d2d2d;
 }
+
 body.dark h1 {
   color: #a1a1aa;
 }
@@ -48,103 +49,10 @@ body.dark h1 {
 body.dark .page-subtitle {
   color: #a1a1aa;
 }
+
 body.dark .skip-card img {
   border: 1px solid white;
 }
-.leaf-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  pointer-events: none;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  z-index: 0;
-}
-
-.leaf {
-  position: absolute;
-  top: -50px;
-  width: 30px;
-  height: 30px;
-  padding: 4px;
-  background-color:none;
-  border-radius: 50%;
-  animation: fall 10s linear infinite, sway 3s ease-in-out infinite;
-  
-}
-.leaf:hover {
-  animation: wiggle 0.6s ease-in-out;
-  cursor: grab;
-}
-
-.leaf:nth-child(1) {
-  left: 5%;
-  animation-delay: 0s;
-  
-}
-.leaf:nth-child(2) {
-  left: 10%;
-  animation-delay: 1s;
-}
-.leaf:nth-child(3) {
-  left: 20%;
-  animation-delay: 2s;
-}
-.leaf:nth-child(4) {
-  left: 35%;
-  animation-delay: 3s;
-}
-.leaf:nth-child(5) {
-  left: 50%;
-  animation-delay: 4s;
-}
-.leaf:nth-child(6) {
-  left: 60%;
-  animation-delay: 5s;
-}
-.leaf:nth-child(7) {
-  left: 70%;
-  animation-delay: 6s;
-}
-.leaf:nth-child(8) {
-  left: 80%;
-  animation-delay: 7s;
-}
-.leaf:nth-child(9) {
-  left: 90%;
-  animation-delay: 8s;
-}
-
-@keyframes fall {
-  0% {
-    top: -50px;
-    transform: rotate(0deg);
-  }
-  100% {
-    top: 110%;
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes sway {
-  0%, 100% {
-    transform: translateX(0px);
-  }
-  50% {
-    transform: translateX(20px);
-  }
-}
-@keyframes wiggle {
-  0% { transform: rotate(0deg); }
-  25% { transform: rotate(5deg); }
-  50% { transform: rotate(-5deg); }
-  75% { transform: rotate(5deg); }
-  100% { transform: rotate(0deg); }
-}
-
-
-
 
 @media (min-width: 768px) {
   h1 {
@@ -154,6 +62,7 @@ body.dark .skip-card img {
   .page-subtitle {
     font-size: 1.1rem;
   }
+
   .grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -167,6 +76,7 @@ body.dark .skip-card img {
   .page-subtitle {
     font-size: 1.2rem;
   }
+
   .grid {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -179,6 +89,7 @@ body.dark .skip-card img {
   font-size: 1.1rem;
   color: #666;
 }
+
 /* Dark mode support */
 body.dark {
   background-color: #1e1e1e;
@@ -193,6 +104,7 @@ body.dark .header {
 body.dark .logo {
   color: #90cdf4;
 }
+
 body.dark .filter-bar {
   background: rgba(30, 41, 59, 0.4);
 }
@@ -212,12 +124,7 @@ body.dark .theme-toggle {
   background-color: #444;
   color: #fff;
 }
+
 body.dark .booking-box p {
   color: black;
-}
-body.dark .leaf {
-  background-color: rgba(165, 42, 42, 0.15);
-}
-body:not(.dark) .leaf {
-  background-color: rgba(34, 197, 94, 0.15); 
 }

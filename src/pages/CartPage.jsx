@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+
 import './CartPage.css';
 
 const CartPage = () => {
@@ -12,8 +13,12 @@ const CartPage = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (!email || !date) {
+    if (
+      !email
+      || !date
+    ) {
       alert("Please fill out all fields.");
+      
       return;
     }
 
@@ -35,7 +40,7 @@ const CartPage = () => {
       </h1>
 
       <div>
-          <div className="booking-box2">
+        <div className="booking-box2">
         <h2>{skip.name || `Skip (${skip.size} yd³)`}</h2>
         <p>{skip.description}</p>
         <p>Size: {skip.size} yd³</p>
@@ -49,8 +54,8 @@ const CartPage = () => {
       </div>
       
       
-        {!submitted ? (
-          <form onSubmit={handleSubmit} className="booking-form">
+      {!submitted 
+        ? (<form onSubmit={handleSubmit} className="booking-form">
             <label>
               Email:
               <input
@@ -72,13 +77,12 @@ const CartPage = () => {
             </label>
 
             <button type="submit">Confirm Booking</button>
-          </form>
-        ) : (
-         <div>
+          </form>) 
+        : (<div>
             🎉 Thank you! Your skip is booked for <strong>{date}</strong>.
             <br /> Confirmation sent to <strong>{email}</strong>.
-          </div>
-        )}
+          </div>)
+        }
       </div>
     </div>
   );
